@@ -1,60 +1,14 @@
 ## 万能答题助手
 
-参考了微信跳一跳助手的思路，通过截取手机上面的题目，利用[百度文字识别](https://cloud.baidu.com/product/ocr/general)识别问题和答案。
+通过截取手机上面的题目，利用[百度文字识别](https://cloud.baidu.com/product/ocr/general)识别问题和答案。
 
-## 运行 
-### 开启浏览器同步支持：
-![](./wechatcode/main-1.png)
-
-### 支持任意游戏模式：
-![](./wechatcode/run-21-1.png)
-
-
-### 科普性知识测试
-
-#### 回锅肉属于什么菜系
-![](./wechatcode/run-6.png)
-#### 北京奥运会是什么时候
-![](./wechatcode/run-7.png)
-
-
-### 简洁版本：
-![](./wechatcode/run-5.png)
-![](./wechatcode/run-1.png)
-![](./wechatcode/run-2.png)
-
-# 我什么都不会勒，但是想带女友打怪升级
-
-真有一个办法，提供了小白版本：
-
-- 无需下载配置复杂的工具链
-- 专人协助
-- 一键运行
-
-小白版本是基于目前的主干分支开发的，继承了主干分支的功能，主要是使用上面配置的东西变少了，专门提供给不太懂技术的小白，大神请使用开源代码折腾。
-
-**小白版本** 目前是需要收取一定的费用，价格是9.9，请走捐赠入口捐赠后联系，或者加微信也可以，微信在最下面。
-
-# 只有 iphone, 没有 android 手机怎么办？
-
-简单靠谱的办法是使用模拟器。
+# 模拟器
 
 1. 首先还是要下载adb工具，下文有介绍
-2. 下载[夜神](https://www.yeshen.com/)模拟器并安装
+2. 下载夜神模拟器并安装
 3. 安装完成后，打开 cmd, 检查是否有模拟器设备 `adb devices`
 4. 在模拟器中安装答题应用
-5. 运行答题辅助脚本`python main.py`,如果有问题下文有解决办法，请参照安装步骤
-
-## **支持捐赠**
-
-- [微信入口](./wechatcode/wechatpay.png)
-- [支付宝](./wechatcode/alipay.jpg)
-
-捐赠后请给我留言，如下福利：
-
-- 项目结束后，整体讲解
-- 免安装版提供支持，已完成，无需任何下载
-- 无条件辅助安装包
+5. 运行`python main.py`
 
 
 ## 百度OCR
@@ -144,41 +98,3 @@ K = count(Q&A) / (count(Q) * count(A))
 汉朝 | 0.0336
 唐朝 | 0.0274
 隋朝 | 0.0396
-
-
-## 贡献者（不分先后）
-
-- [uniqhj](https://github.com/UniqHu)
-- wangfpp
-- [using1174](https://github.com/Using1174)
-- [kakalote2008	](https://github.com/kakalote2008)
-- [lonelam](https://github.com/lonelam)
-- [luyiming](https://github.com/luyiming)
-- [Snownee](https://github.com/Snownee)
-
-## 参考项目
-
-- [wuditken/MillionHeroes](https://github.com/wuditken/MillionHeroes)
-- [lingfengsan/MillionHero](https://github.com/lingfengsan/MillionHero)
-
-
-## 交流学习
-
-想要交流学习请添加我的 wechat ,
-群已经满了200人了，需要邀请进群。
-请优先加入qq群，很重要的改进可以加weixin:
-
-QQ 群：
-
-![](./wechatcode/qqcode.png)
-
-微信二维码：
-
-![](./wechatcode/wechat-1.png)
-
-
-QQ 号：
-
-![](./wechatcode/liuquan.png)
-
-qq: 2244741445

@@ -54,3 +54,36 @@ Traceback (most recent call last):
   File "D:\application\python\python\lib\site-packages\PIL\Image.py", line 2543, in open
     fp = builtins.open(filename, "rb")
 FileNotFoundError: [Errno 2] No such file or directory: 'screenshots\\screenshot.png'
+2018-01-24 10:33:32,277 - ERROR - list index out of range
+Traceback (most recent call last):
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 169, in baidu_count_daemon
+    "肯定回答(**)： {0}".format(summary_li[0][0]),
+IndexError: list index out of range
+2018-01-24 11:45:48,851 - ERROR - '01秒下场准点来领钱喔'
+Traceback (most recent call last):
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '01秒下场准点来领钱喔'
+2018-01-24 12:37:03,557 - ERROR - '312'
+Traceback (most recent call last):
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '312'
+2018-01-24 12:38:34,941 - ERROR - '12'
+Traceback (most recent call last):
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '12'
+2018-01-24 12:39:50,098 - ERROR - '12'
+Traceback (most recent call last):
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '12'
