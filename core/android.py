@@ -162,6 +162,7 @@ def parse_answer_area(source_file, text_area_file, compress_level, crop_area):
     image = Image.open(source_file)
     width, height = image.size[0], image.size[1]
 
+
     if not crop_area:
         image = image.convert("L")
         array_img = np.array(image)

@@ -12,7 +12,7 @@ api_version:
   - 0
   - 1
 
-## 图像比例裁剪区域, (left, top, right, bottom)
+## 图像比例裁剪区域, (left, top, right, bottom) 上下值增大表示向外扩张
 ## 最终裁剪区域可表示为 (image_width * left, image_height * top, image_width * right, image_height * bottom)
 crop_areas:
     '百万英雄':
@@ -37,9 +37,9 @@ crop_areas:
       - 0.683
     "花椒":
       - 0.074
-      - 0.186
+      - 0.220
       - 0.926
-      - 0.683
+      - 0.793
     "自适应": false
 
 ### baidu orc
