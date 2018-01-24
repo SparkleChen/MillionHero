@@ -1,0 +1,56 @@
+2018-01-23 18:15:35,644 - ERROR - type str doesn't define __round__ method
+Traceback (most recent call last):
+  File "main.py", line 233, in main
+    __inner_job()
+  File "main.py", line 189, in __inner_job
+    crop_area=crop_areas[game_type]
+  File "D:\Core\python_all\MillionHeroAssistant-master\core\android.py", line 76, in analyze_current_screen_text
+    save_text_area, compress_level, crop_area)
+  File "D:\Core\python_all\MillionHeroAssistant-master\core\android.py", line 182, in parse_answer_area
+    region = image.crop((width * crop_area[0], height * crop_area[1], width * crop_area[2], height * crop_area[3]))
+  File "D:\application\python\python\lib\site-packages\PIL\Image.py", line 1076, in crop
+    return self._new(self._crop(self.im, box))
+  File "D:\application\python\python\lib\site-packages\PIL\Image.py", line 1090, in _crop
+    x0, y0, x1, y1 = map(int, map(round, box))
+TypeError: type str doesn't define __round__ method
+2018-01-23 18:15:38,709 - ERROR - type str doesn't define __round__ method
+Traceback (most recent call last):
+  File "main.py", line 233, in main
+    __inner_job()
+  File "main.py", line 189, in __inner_job
+    crop_area=crop_areas[game_type]
+  File "D:\Core\python_all\MillionHeroAssistant-master\core\android.py", line 76, in analyze_current_screen_text
+    save_text_area, compress_level, crop_area)
+  File "D:\Core\python_all\MillionHeroAssistant-master\core\android.py", line 182, in parse_answer_area
+    region = image.crop((width * crop_area[0], height * crop_area[1], width * crop_area[2], height * crop_area[3]))
+  File "D:\application\python\python\lib\site-packages\PIL\Image.py", line 1076, in crop
+    return self._new(self._crop(self.im, box))
+  File "D:\application\python\python\lib\site-packages\PIL\Image.py", line 1090, in _crop
+    x0, y0, x1, y1 = map(int, map(round, box))
+TypeError: type str doesn't define __round__ method
+2018-01-24 09:41:13,697 - ERROR - [Errno 2] No such file or directory: 'screenshots\\screenshot.png'
+Traceback (most recent call last):
+  File "main.py", line 233, in main
+    __inner_job()
+  File "main.py", line 189, in __inner_job
+    crop_area=crop_areas[game_type]
+  File "D:\Core\python_all\MillionHeroAssistant-master\core\android.py", line 76, in analyze_current_screen_text
+    save_text_area, compress_level, crop_area)
+  File "D:\Core\python_all\MillionHeroAssistant-master\core\android.py", line 162, in parse_answer_area
+    image = Image.open(source_file)
+  File "D:\application\python\python\lib\site-packages\PIL\Image.py", line 2543, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'screenshots\\screenshot.png'
+2018-01-24 09:41:17,569 - ERROR - [Errno 2] No such file or directory: 'screenshots\\screenshot.png'
+Traceback (most recent call last):
+  File "main.py", line 233, in main
+    __inner_job()
+  File "main.py", line 189, in __inner_job
+    crop_area=crop_areas[game_type]
+  File "D:\Core\python_all\MillionHeroAssistant-master\core\android.py", line 76, in analyze_current_screen_text
+    save_text_area, compress_level, crop_area)
+  File "D:\Core\python_all\MillionHeroAssistant-master\core\android.py", line 162, in parse_answer_area
+    image = Image.open(source_file)
+  File "D:\application\python\python\lib\site-packages\PIL\Image.py", line 2543, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'screenshots\\screenshot.png'
