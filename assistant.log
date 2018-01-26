@@ -87,3 +87,52 @@ Traceback (most recent call last):
   File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
     for key in baidu_summary
 KeyError: '12'
+2018-01-25 10:25:44,331 - ERROR - '你饿不饿啊我煮碗面给你'
+Traceback (most recent call last):
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '你饿不饿啊我煮碗面给你'
+2018-01-25 10:44:24,264 - ERROR - '你饿不饿啊我煮碗面给你'
+Traceback (most recent call last):
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '你饿不饿啊我煮碗面给你'
+2018-01-25 11:21:51,650 - ERROR - '大内密探零零发'
+Traceback (most recent call last):
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '大内密探零零发'
+2018-01-25 11:31:45,531 - ERROR - '你饿不饿啊我煮碗面给你'
+Traceback (most recent call last):
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:\Core\Mon\MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '你饿不饿啊我煮碗面给你'
+2018-01-25 14:28:31,226 - ERROR - '你饿不饿啊我煮碗面给你'
+Traceback (most recent call last):
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '你饿不饿啊我煮碗面给你'
+2018-01-25 14:45:39,304 - ERROR - '大内密探零零发'
+Traceback (most recent call last):
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '大内密探零零发'
+2018-01-25 14:51:11,160 - ERROR - '大内密探零零发'
+Traceback (most recent call last):
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in baidu_count_daemon
+    for key in baidu_summary
+  File "D:/Core/Mon/MillionHero\core\crawler\pmi.py", line 164, in <dictcomp>
+    for key in baidu_summary
+KeyError: '大内密探零零发'

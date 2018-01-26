@@ -40,7 +40,7 @@ formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
-## jieba init
+## jieba init 词法分析初始化
 jieba_initialize()
 
 if prefer[0] == "baidu":
@@ -54,7 +54,7 @@ if prefer[0] == "baidu":
 elif prefer[0] == "ocrspace":
     get_text_from_image = partial(ocrspace_get_text, api_key=api_key)
 
-
+#解析命令行
 def parse_args():
     parser = ArgumentParser(description="Million Hero Assistant")
     parser.add_argument(
@@ -65,7 +65,7 @@ def parse_args():
     )
     return parser.parse_args()
 
-
+#从图片中读取的文字按问题和答案字符串传递
 def parse_question_and_answer(text_list):
     question = ""
     start = 0
@@ -75,10 +75,10 @@ def parse_question_and_answer(text_list):
             start = i + 1
             break
     real_question = question.split(".")[-1]
-
+    #替换‘以下’和‘下列’为空字符
     for char, repl in [("以下", ""), ("下列", "")]:
         real_question = real_question.replace(char, repl, 1)
-
+    # 判断给出问题的正反向
     question, true_flag = parse_false(real_question)
     return true_flag, real_question, question, text_list[start:]
 
@@ -110,7 +110,7 @@ def sync_data_daemon(stdoutpipe):
     else:
         stdoutpipe.put("同步信息到云端错误")
 
-
+#输入游戏序号
 def prompt_message():
     global game_type
     print("""
@@ -120,9 +120,10 @@ def prompt_message():
     3. 芝士超人
     4. UC答题
     5. 花椒
-    6. 自适应   
+    6. 好看视频
+    7. 自适应   
 """)
-    game_type = input("输入节目序号: ")
+    game_type = input("输入节目序号: \n")
     if game_type == "1":
         game_type = '百万英雄'
     elif game_type == "2":
@@ -134,11 +135,13 @@ def prompt_message():
     elif game_type == "5":
         game_type = "花椒"
     elif game_type == "6":
+        game_type = "好看视频"
+    elif game_type == "7":
         game_type = "自适应"
     else:
         game_type = '自适应'
 
-
+#主函数
 def main():
     args = parse_args()
     timeout = args.timeout
@@ -206,6 +209,7 @@ def main():
         true_flag, real_question, question, answers = parse_question_and_answer(keywords)
 
         ### parse for answer
+        ### 3个答案选项
         answers = map(lambda a: a.rsplit(":")[-1], answers)
         answers = list(map(lambda a: a.rsplit(".")[-1], answers))
 

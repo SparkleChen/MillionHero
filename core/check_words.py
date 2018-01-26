@@ -18,7 +18,7 @@ FALSE = (
     "错误"
 )
 
-
+#判断给出问题（question）是否为否定
 def parse_false(question):
     """
 

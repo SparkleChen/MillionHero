@@ -88,7 +88,7 @@ def capture_screen_v2(filename="screenshot.png", directory="."):
     adb_bin = get_adb_tool()
     os.system("{0} shell screencap -p /sdcard/{1}".format(adb_bin, filename))
     os.system("{0} pull /sdcard/{1} {2}".format(adb_bin, filename, os.path.join(directory, filename)))
-
+    print("采用方式12")
 
 def capture_screen(filename="screenshot.png", directory="."):
     """
@@ -158,8 +158,8 @@ def parse_answer_area(source_file, text_area_file, compress_level, crop_area):
 
     :return:
     """
-
-    image = Image.open(source_file)
+    image = Image.open("C:\\Users\\Administrator\\Desktop\\aaa\\screenshot.png")
+    #image = Image.open(source_file)
     width, height = image.size[0], image.size[1]
 
 

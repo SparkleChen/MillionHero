@@ -40,7 +40,7 @@ def get_qa_list(source_file):
     finally:
         fp.close()
 
-
+#可部署到自己的服务器上
 def upload_to_cloud(qa_li):
     """
     upload data to cloud
